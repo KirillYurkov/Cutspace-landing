@@ -1,0 +1,44 @@
+.hero{
+    // background-image: url('../img/hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 540px 676px;
+    padding-top: 127px;
+    padding-bottom: 135px;
+    
+}
+.hero-l {
+  display: flex;
+  flex-direction: column;
+  max-width: 674px;
+}
+.hero__title {
+  margin-bottom: 25px;
+}
+.hero__desc {
+  max-width: 468px;
+  margin-bottom: 42px;
+}
+.hero__form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  border-radius: 29px;
+  width: 420px;
+  height: 58px;
+  box-shadow: 0 17px 42px 0 rgba(0, 0, 0, 0.12);
+  background: transparent;
+}
+.hero__email {
+  outline: none;
+  border: none;
+  padding-left: 30px;
+  background-image: url("../img/svg_multi/mail.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: #bbb;
+  }
+}

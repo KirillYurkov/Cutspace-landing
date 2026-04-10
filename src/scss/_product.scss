@@ -1,0 +1,37 @@
+.product {
+  background-image: url("../img/product-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 92px 70px 91px 651px;
+  margin-left: auto;
+  width: 100%;
+  &-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px;
+  }
+  &__title {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  &__desc {
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  &__btns {
+    margin-top: auto;
+    display: flex;
+    gap: 20px;
+  }
+}
+.btn--watch {
+  background-color: #fff;
+  color: #323232;
+  background-image: url("../img/svg_multi/product-play.svg");
+  background-repeat: no-repeat;
+  background-position: 30px;
+  border: none;
+  padding: 18px 37px 17px 50px;
+  border-radius: 29px;
+}

@@ -1,0 +1,84 @@
+.space {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  overflow: hidden;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1140px;
+    gap: 98px;
+    margin-bottom: 100px;
+  }
+}
+.one,
+.two,
+.three,
+.four {
+  width: 217px;
+}
+.space__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 160px;
+  align-items: center;
+}
+.space__title {
+  margin-bottom: 20px;
+}
+.space__desc {
+  margin-bottom: 20px;
+  width: 374px;
+}
+.space__desc:last-of-type {
+  margin-bottom: 40px;
+}
+.space__btn {
+  margin-top: auto;
+}
+.spaceSwiper {
+  width: 800px;
+  margin-left: -88px;
+}
+.swiper-slide {
+  width: 385px;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.space-tooltip {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 30%;
+}
+.tt-1,
+.tt-2,
+.tt-3 {
+  display: none;
+}
+
+.space-tooltip__title {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #323232;
+}
+.space-tooltip___desc {
+  width: 177px;
+}
+.tt-1.show,
+.tt-2.show,
+.tt-3.show {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+  background: #fff;
+  background-image: url("../img/svg_multi/space_tooltip.svg");
+  background-repeat: no-repeat;
+  background-position: 29px 50%;
+  padding: 32px 49px 32px 90px;
+}

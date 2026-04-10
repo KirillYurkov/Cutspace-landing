@@ -1,0 +1,69 @@
+.serv {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  &-top {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    align-items: center;
+    flex-direction: column;
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
+}
+.serv-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+// Карточка
+.serv-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  &__title {
+    text-align: center;
+    color: #323232;
+  }
+  &__desc {
+    max-width: 364px;
+    text-align: center;
+    color: #323232;
+    margin-bottom: 20px;
+  }
+  &__btn{
+    background-color: transparent;
+    color:var(--primary-btn);
+    &:hover{
+        color: var(--primary-btn-hover);
+    }
+  }
+}
+.serv-buy,
+.serv-sale {
+  fill: var(--primary-btn);
+  width: 150px;
+}
+// Стили Активная карточка
+.serv-card--active {
+  background-color: var(--primary-btn);
+}
+.serv-card--active > .serv-buy,
+.serv-card--active > .serv-sale {
+  fill: #fff;
+}
+.serv-card--active > .serv-card__title,
+.serv-card--active > .serv-card__desc {
+  color: #fff;
+}
+
+.serv-card--active > .serv-card__btn {
+  background-color: #fff;
+  color:var(--primary-btn)
+}
